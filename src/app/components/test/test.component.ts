@@ -21,7 +21,7 @@ export class TestComponent implements OnInit {
     },
     {
       answer: "Cartagena",
-      correct: true
+      correct: false
     },
     {
       answer: "Bogotá",

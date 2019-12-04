@@ -1,0 +1,13 @@
+<div class="row task mb-4 mt-4">
+    <div class="col-2 block-date">
+        <h5>{{task.date | date}}</h5>
+    </div>
+    <div class="col-8 block-description" [title]="task.description" 
+    [ngClass]="{'col-8': !task.completed, 'col-10 block-description-complete rounded-right del': task.completed}">
+        <h5>{{task.description}}</h5>
+    </div>
+    <div *ngIf="!task.completed" class="col-2 block-actions rounded-right">
+        <i class="icon-action fa fa-check text-success" (click)="taksCompete()"></i>
+        <i class="icon-action fa fa-remove text-danger" (click)="taskRemove()"></i>
+    </div>
+</div>

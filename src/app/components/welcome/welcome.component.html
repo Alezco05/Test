@@ -1,0 +1,11 @@
+<div class="row">
+<div class="col-12 mt-4">
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Welcome.</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit rem excepturi fuga repudiandae iste officia ab, possimus, beatae voluptas illum labore sequi qui atque quod tempora aperiam, dolor recusandae eum?</p>
+        <p class="lead" *ngFor="let link of links">
+         <a [routerLink]="link.path" lass="btn btn-lg btn-secondary">{{link.title}}</a>
+        </p>
+    </main>
+</div>
+</div>
